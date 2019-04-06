@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "UrlRouter.asURLRequest():Enums.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "method.rawValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MovieListViewModel.setupProperties(with:):MovieListViewModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.totalPages">
+            </PersistentString>
+            <PersistentString
+               value = "mostPopular.page">
+            </PersistentString>
+            <PersistentString
+               value = "self.movieCellViewModels">
+            </PersistentString>
+            <PersistentString
+               value = "self.page">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in MoviesTableViewController.attemptFetchData():MoviesTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.viewModel.isLoading">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MoviesTableViewController.tableView(_:willDisplay:forRowAt:):MoviesTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "movieCellViewModels.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
