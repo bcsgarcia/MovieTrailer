@@ -8,11 +8,11 @@
 
 import Foundation
 
-class MostPopular : Codable {
+class MostPopularResponse : Codable {
     
-    var page : Int = 0
-    var totalResults : Int = 0
-    var totalPages : Int = 0
+    var page : Int? = 0
+    var totalResults : Int? = 0
+    var totalPages : Int? = 0
     var results : [Movie] = []
     
     enum CodingKeys:String,CodingKey

@@ -19,6 +19,7 @@ enum MovieRequestError {
     case url
     case noResponse
     case noData
+    case noInternetConnection
     case httpError(code: Int)
 }
 
@@ -30,11 +31,12 @@ enum UrlRouter: URLRequestConvertible {
     
     case getPopular(Int)
     case getDetail(Int)
+    case getVideos(Int)
     
     func asURLRequest() throws -> URLRequest {
         var method: HTTPMethod {
             switch self {
-            case .getPopular, .getDetail:
+            case .getPopular, .getDetail, .getVideos:
                 return .get
             }
         }
@@ -47,6 +49,8 @@ enum UrlRouter: URLRequestConvertible {
                 relativePath = "popular?api_key=\(UrlRouter.apiKey)&page=\(number)"
             case .getDetail(let number):
                 relativePath = "\(number)?api_key=\(UrlRouter.apiKey)"
+            case .getVideos(let number):
+                relativePath = "\(number)/videos?api_key=\(UrlRouter.apiKey)"
             }
             
             var url = URL(string: UrlRouter.baseURLString)!

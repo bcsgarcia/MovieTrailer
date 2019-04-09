@@ -13,7 +13,10 @@ class MostPopService {
     
     static let shared = MostPopService()
     
-    func fetchMostPopMovies(page: Int, completion: @escaping (MostPopular?, MovieRequestError?) -> ()) {
+    func fetchMostPopMovies(page: Int, completion: @escaping (MostPopularResponse?, MovieRequestError?) -> ()) {
+        
+       
+        
         Alamofire.request(UrlRouter.getPopular(page))
             .responseJSON { (response) in
                 if response.result.value == nil {
@@ -26,7 +29,7 @@ class MostPopService {
                 }
                 
                 do {
-                    let mostPopular = try JSONDecoder().decode(MostPopular.self, from: data)
+                    let mostPopular = try JSONDecoder().decode(MostPopularResponse.self, from: data)
                     DispatchQueue.main.async {
                         completion(mostPopular, nil)
                     }

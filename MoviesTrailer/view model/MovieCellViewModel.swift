@@ -16,8 +16,8 @@ struct MovieCellViewModel {
     let posterPath : String
     
     init(movie: Movie) {
-        self.title = movie.title
-        self.posterPath = movie.posterPath
+        self.title = movie.title ?? ""
+        self.posterPath = movie.posterPath ?? ""
         self.movie = movie
     }
     

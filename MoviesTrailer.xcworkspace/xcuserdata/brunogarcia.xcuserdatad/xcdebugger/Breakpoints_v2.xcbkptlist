@@ -41,14 +41,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MoviesTrailer/view model/MovieListViewModel.swift"
-            timestampString = "576260728.113619"
+            filePath = "MoviesTrailer/service/MovieDetailService.swift"
+            timestampString = "576462142.9319119"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "mostPopular"
-            landmarkType = "24">
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "fetchVideo(id:completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -57,44 +57,60 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MoviesTrailer/view model/MovieListViewModel.swift"
-            timestampString = "576260728.113784"
+            filePath = "MoviesTrailer/service/MovieDetailService.swift"
+            timestampString = "576462142.932011"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
-            landmarkName = "setupProperties(with:)"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "fetchVideo(id:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MoviesTrailer/view model/MovieDetailViewModel.swift"
+            timestampString = "576462142.932083"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "setupYoutubeKey(with:)"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "MoviesTrailer.MovieListViewModel.(setupProperties in _D47C8BA8A3ABB76928A3F45EF0B0FDE4)(with: MoviesTrailer.MostPopular) -&gt; ()"
+                  symbolName = "MoviesTrailer.MovieDetailViewModel.(setupYoutubeKey in _D8956F5EA873CC9B85D42F98FA647898)(with: Swift.Array&lt;MoviesTrailer.Video&gt;) -&gt; ()"
                   moduleName = "MoviesTrailer"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brunogarcia/Documents/Apple/MoviesTrailer/MoviesTrailer/view%20model/MovieListViewModel.swift"
-                  timestampString = "576257134.4252419"
+                  urlString = "file:///Users/brunogarcia/Documents/Apple/MoviesTrailer/MoviesTrailer/view%20model/MovieDetailViewModel.swift"
+                  timestampString = "576271338.669578"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "142">
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "51">
                </Location>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (MoviesTrailer.Movie) -&gt; MoviesTrailer.MovieCellViewModel in implicit closure #1 () throws -&gt; Swift.Array&lt;MoviesTrailer.MovieCellViewModel&gt; in MoviesTrailer.MovieListViewModel.(setupProperties in _D47C8BA8A3ABB76928A3F45EF0B0FDE4)(with: MoviesTrailer.MostPopular) -&gt; ()"
+                  symbolName = "closure #1 (MoviesTrailer.Video) -&gt; Swift.Bool in MoviesTrailer.MovieDetailViewModel.(setupYoutubeKey in _D8956F5EA873CC9B85D42F98FA647898)(with: Swift.Array&lt;MoviesTrailer.Video&gt;) -&gt; ()"
                   moduleName = "MoviesTrailer"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brunogarcia/Documents/Apple/MoviesTrailer/MoviesTrailer/view%20model/MovieListViewModel.swift"
-                  timestampString = "576257134.428284"
+                  urlString = "file:///Users/brunogarcia/Documents/Apple/MoviesTrailer/MoviesTrailer/view%20model/MovieDetailViewModel.swift"
+                  timestampString = "576271338.672214"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "20">
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "22">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -102,97 +118,145 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MoviesTrailer/view model/MovieListViewModel.swift"
-            timestampString = "576260728.113892"
+            filePath = "MoviesTrailer/view model/MovieDetailViewModel.swift"
+            timestampString = "576462142.93215"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "setupYoutubeKey(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MoviesTrailer/view/controller/MovieDetailViewController.swift"
+            timestampString = "576462142.932218"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "showAlert(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MoviesTrailer/service/MovieDetailService.swift"
+            timestampString = "576462142.932283"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "fetchMovieDetail(id:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MoviesTrailer/service/MovieDetailService.swift"
+            timestampString = "576462142.932345"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
             endingLineNumber = "44"
-            landmarkName = "fetchData()"
+            landmarkName = "fetchVideo(id:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MoviesTrailer/view model/MovieListViewModel.swift"
-            timestampString = "576260728.113968"
+            filePath = "MoviesTrailer/view/controller/MoviesTableViewController.swift"
+            timestampString = "576462142.932409"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "fetchData()"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "attemptFetchData()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MoviesTrailer/view model/MovieListViewModel.swift"
-            timestampString = "576260728.114042"
+            filePath = "MoviesTrailer/view/controller/MoviesTableViewController.swift"
+            timestampString = "576462142.932514"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
-            landmarkName = "setupProperties(with:)"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "initInternetConnectionCheck()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MoviesTrailer/view model/MovieListViewModel.swift"
-            timestampString = "576260728.114174"
+            filePath = "MoviesTrailer/view/controller/MovieDetailViewController.swift"
+            timestampString = "576462142.932611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "fetchData()"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "attemptFetchData()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MoviesTrailer.MovieListViewModel.fetchData() -&gt; ()"
-                  moduleName = "MoviesTrailer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brunogarcia/Documents/Apple/MoviesTrailer/MoviesTrailer/view%20model/MovieListViewModel.swift"
-                  timestampString = "576259362.007522"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "139">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;MoviesTrailer.MostPopular&gt;, Swift.Optional&lt;MoviesTrailer.MovieRequestError&gt;) -&gt; () in MoviesTrailer.MovieListViewModel.fetchData() -&gt; ()"
-                  moduleName = "MoviesTrailer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brunogarcia/Documents/Apple/MoviesTrailer/MoviesTrailer/view%20model/MovieListViewModel.swift"
-                  timestampString = "576259362.009797"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "299">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MoviesTrailer/view/controller/MovieDetailViewController.swift"
+            timestampString = "576462142.932675"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "checkInernet()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MoviesTrailer/view/controller/MoviesTableViewController.swift"
+            timestampString = "576462142.932749"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "activityIndicatorStart()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

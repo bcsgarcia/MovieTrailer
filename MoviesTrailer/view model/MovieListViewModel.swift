@@ -12,7 +12,7 @@ import Foundation
 class MovieListViewModel {
     
     // MARK: - Properties
-    private var mostPopular: MostPopular? {
+    private var mostPopular: MostPopularResponse? {
         didSet {
             guard let mp = mostPopular else { return }
             self.setupProperties(with: mp)
@@ -43,6 +43,12 @@ class MovieListViewModel {
     func fetchData() {
         isLoading = true
         
+        if !CheckInternet.Connection() {
+            isLoading = false
+            error = .noInternetConnection
+            return
+        }
+        
         guard let page = plusOnePage() else {
             isLoading = false
             return
@@ -50,8 +56,8 @@ class MovieListViewModel {
         
         MostPopService.shared.fetchMostPopMovies(page: page) { (mostPopular, err) in
             if let err = err {
-                self.error = err
                 self.isLoading = false
+                self.error = err
                 return
             }
             guard let mostPopular = mostPopular else {
@@ -65,7 +71,6 @@ class MovieListViewModel {
     }
     
     // MARK: - UI Logic
-    
     private func plusOnePage() -> Int? {
         
         if page == 0 && totalPages == 0 {
@@ -82,8 +87,8 @@ class MovieListViewModel {
         return page
     }
     
-    private func setupProperties(with mostPopular: MostPopular) {
-        self.totalPages = mostPopular.totalPages
+    private func setupProperties(with mostPopular: MostPopularResponse) {
+        self.totalPages = mostPopular.totalPages ?? 0
         self.movieCellViewModels = self.movieCellViewModels + mostPopular.results.map({return MovieCellViewModel(movie: $0)})
         print(self.movieCellViewModels.count)
     }

@@ -11,12 +11,12 @@ import Foundation
 class Movie : Codable {
     
     var backdropPath : String? = ""
-    var posterPath : String = ""
+    var posterPath : String? = ""
     var genres : [Genre]? = []
-    var id : Int = 0
-    var releaseDate : String = ""
-    var title : String = ""
-    var overview : String = ""
+    var id : Int? = 0
+    var releaseDate : String? = ""
+    var title : String? = ""
+    var overview : String? = ""
     
     
     enum CodingKeys:String,CodingKey

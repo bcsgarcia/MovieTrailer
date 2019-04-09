@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "MoviesTableViewController.tableView(_:willDisplay:forRowAt:):MoviesTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "movieCellViewModels.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "UrlRouter.asURLRequest():Enums.swift">
          <PersistentStrings>
             <PersistentString
@@ -28,6 +36,30 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "MoviesTableViewController.searchBar(_:textDidChange:):MoviesTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "searchBar.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in MoviesTableViewController.searchBar(_:textDidChange:):MoviesTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "text == &quot;&quot;">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MoviesTableViewController.tableView(_:viewForFooterInSection:):MoviesTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "searchBar">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in MoviesTableViewController.attemptFetchData():MoviesTableViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -36,10 +68,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "MoviesTableViewController.tableView(_:willDisplay:forRowAt:):MoviesTableViewController.swift">
+         contextName = "MovieDetailViewController.initializeFields():MovieDetailViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "movieCellViewModels.count">
+               value = "movie">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

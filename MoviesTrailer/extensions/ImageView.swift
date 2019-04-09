@@ -17,7 +17,7 @@ let imageCache = NSCache<AnyObject, AnyObject>()
 extension UIImageView {
     
     func loadImageUsingUrlString(urlString: String) {
-        self.image = UIImage.gif(name: "loading")
+        self.image = #imageLiteral(resourceName: "loading")
         
         if let imageFromCache = imageCache.object(forKey: urlString as AnyObject) as? UIImage {
             self.image = imageFromCache
