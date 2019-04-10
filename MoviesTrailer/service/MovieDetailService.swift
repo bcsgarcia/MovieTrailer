@@ -9,14 +9,15 @@
 import Foundation
 import Alamofire
 
-class MovieDetailService {
-    
-    static let shared = MovieDetailService()
+protocol MovieDetailServiceProtocol {
+    func fetchMovieDetail(id: Int, completion: @escaping (Movie?, MovieRequestError?) -> ())
+    func fetchVideo(id: Int, completion: @escaping ([Video]?, MovieRequestError?) -> ())
+}
+
+
+class MovieDetailService: MovieDetailServiceProtocol {
     
     func fetchMovieDetail(id: Int, completion: @escaping (Movie?, MovieRequestError?) -> ()) {
-        
-       
-        
         Alamofire.request(UrlRouter.getDetail(id))
             .responseJSON { (response) in
                 if response.result.value == nil {
@@ -40,9 +41,6 @@ class MovieDetailService {
     }
     
     func fetchVideo(id: Int, completion: @escaping ([Video]?, MovieRequestError?) -> ()) {
-        
-       
-        
         Alamofire.request(UrlRouter.getVideos(id))
             .responseJSON { (response) in
                 

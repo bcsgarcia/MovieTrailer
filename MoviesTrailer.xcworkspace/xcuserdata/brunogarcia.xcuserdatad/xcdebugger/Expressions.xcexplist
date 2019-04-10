@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "MostPopServiceMock.fetchSuccess():MostPopServiceMock.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "completeClosure">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "MoviesTableViewController.tableView(_:willDisplay:forRowAt:):MoviesTableViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -22,7 +30,7 @@
          contextName = "MovieListViewModel.setupProperties(with:):MovieListViewModel.swift">
          <PersistentStrings>
             <PersistentString
-               value = "self.totalPages">
+               value = "self.page">
             </PersistentString>
             <PersistentString
                value = "mostPopular.page">
@@ -31,7 +39,7 @@
                value = "self.movieCellViewModels">
             </PersistentString>
             <PersistentString
-               value = "self.page">
+               value = "self.totalPages">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

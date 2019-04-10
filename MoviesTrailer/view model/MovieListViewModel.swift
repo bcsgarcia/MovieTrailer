@@ -24,6 +24,8 @@ class MovieListViewModel {
     var totalPages = 0
     var movieCellViewModels = [MovieCellViewModel]()
     
+    let mostPopService: MostPopServiceProtocol
+    
     var error: MovieRequestError? {
         didSet { self.showAlertClosure?() }
     }
@@ -33,7 +35,12 @@ class MovieListViewModel {
             self.updateLoadingStatus?() }
     }
     
-    // MARK: - Closures for callback, since we are not using the ViewModel to the View.
+    // Dependency Injection
+    init( mostPopService: MostPopServiceProtocol = MostPopService()) {
+        self.mostPopService = mostPopService
+    }
+    
+    // MARK: - Closures for callback
     var showAlertClosure: (() -> ())?
     var updateLoadingStatus: (() -> ())?
     var didFinishFetch: (() -> ())?
@@ -54,7 +61,7 @@ class MovieListViewModel {
             return
         }
         
-        MostPopService.shared.fetchMostPopMovies(page: page) { (mostPopular, err) in
+        mostPopService.fetchMostPopMovies(page: page) { (mostPopular, err) in
             if let err = err {
                 self.isLoading = false
                 self.error = err

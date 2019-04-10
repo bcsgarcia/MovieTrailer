@@ -9,10 +9,14 @@
 import Foundation
 import Alamofire
 
-class MostPopService {
+protocol MostPopServiceProtocol {
+    func fetchMostPopMovies(page: Int, completion: @escaping (MostPopularResponse?, MovieRequestError?) -> ())
+}
+
+
+class MostPopService: MostPopServiceProtocol {
     
-    static let shared = MostPopService()
-    
+    //static let shared = MostPopService()
     func fetchMostPopMovies(page: Int, completion: @escaping (MostPopularResponse?, MovieRequestError?) -> ()) {
         
        

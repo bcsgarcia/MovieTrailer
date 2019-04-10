@@ -26,6 +26,8 @@ class MovieDetailViewModel {
         }
     }
     
+    let movieDetailService : MovieDetailServiceProtocol
+    
     var posterPath: String?
     var title: String?
     var genres: String?
@@ -46,6 +48,10 @@ class MovieDetailViewModel {
         didSet { self.updateLoadingStatus?() }
     }
     
+    init(movieDetailService: MovieDetailServiceProtocol = MovieDetailService()){
+        self.movieDetailService = movieDetailService
+    }
+    
     // MARK: - Closures for callback, since we are not using the ViewModel to the View.
     var showAlertClosure: (() -> ())?
     var updateLoadingStatus: (() -> ())?
@@ -63,7 +69,7 @@ class MovieDetailViewModel {
             return
         }
         
-        MovieDetailService.shared.fetchMovieDetail(id: id) { (movie, err) in
+        movieDetailService.fetchMovieDetail(id: id) { (movie, err) in
             if let err = err {
                 self.isLoading = false
                 self.error = err
@@ -78,14 +84,11 @@ class MovieDetailViewModel {
             self.movie = movie
             
             self.fetchVideoData(withId: id)
-            
         }
-        
-        
     }
     
     private func fetchVideoData(withId id: Int) {
-        MovieDetailService.shared.fetchVideo(id: id) { (videos, err) in
+        movieDetailService.fetchVideo(id: id) { (videos, err) in
             if let err = err {
                 self.error = err
                 return
